@@ -12,7 +12,7 @@ Celem projektu było stworzenie programu odczytującego zapisy EKG, obliczające
 
 Program uruchamia się jako argument podając ścieżkę pliku. Przykładowe dane znajdują się w folderze **data**
 
-`$ python 1.py ./data/sample2.csv `
+`$ python EKG_reader.py ./data/sample2.csv `
 
 Programy uruchamiane były w **Python3.8.0**, wersje wykorzystanych pakietów znajdują się w **requirements.txt**. Przykładowe dane znajdują się w folderze **data**. Po pobraniu pełnego repozytorium i zainstalowaniu odpowiednich bibliotek programy nie wymagają dodatkowej instalacji. Można wykorzystać programy na innych rekordach z odpowiednich baz danych, choć nie były one na nich testowane, wymaga to jednak indywidualnego pobrania ich i zapisania w csv z użyciem odpowiedniego oprogramownania z **WFDB** opisanego poniżej zgodnie z instrukcjami dostępnymi na załączonych stronach internetowych.
 
@@ -97,20 +97,12 @@ Pliki pochodzące z bazy
 
 ## Pliki i Foldery
 
-- **proj**
-  
-  - **metfiz_venv** - virtual environment directory
-  
-  - **wfdb-10.6.2** - WFDB software directory
-  
-  - **data1** - pliki z ECG_ID test data
-  
-  - **data2** - pliki z QT DB data
-  
-  - **data3** - pliki z Motion Artifact Contaminated ECG Database
-  
-  - 0_1.py - pierwszy test na danych z ECG-ID
-  
-  - 0_2.py - test odczytu większego pliku z wykorzystaniem QT Database
-  
-  - 0_3.py - próby z zaburzeniami sygnału pochodzącymi z ruchu badanego
+- **data**/ przykładowe dane
+
+- **example_plots/**  przykładowe wykresy wykonane z użyciem EKG_reader.py
+
+- **EKG_reader.py** - główny program służący do odczytu EKG
+
+- **README.md** 
+
+- **requirements.txt** - wersje bibliotek Pythona
