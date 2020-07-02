@@ -10,7 +10,11 @@ Celem projektu było stworzenie programu odczytującego zapisy EKG, obliczające
 
 ## Uruchomienie
 
-Programy uruchamiane były w **Python3.8.0**, wersje wykorzystanych pakietów znajdują się w **requirements.txt**. Przykładowe dane znajdują się w folderach **data1, data2 i data3**, odpowiednie programy zawierają linki do nich. Po pobraniu pełnego repozytorium i zainstalowaniu odpowiednich bibliotek programy nie wymagają dodatkowej instalacji. Można wykorzystać programy na innych rekordach z odpowiednich baz danych, choć nie były one na nich testowane, wymaga to jednak indywidualnego pobrania ich i zapisania w csv z użyciem odpowiedniego oprogramownania z **WFDB** opisanego poniżej zgodnie z instrukcjami dostępnymi na załączonych stronach internetowych.
+Program uruchamia się jako argument podając ścieżkę pliku. Przykładowe dane znajdują się w folderze **data**
+
+`$ python 1.py ./data/sample2.csv `
+
+Programy uruchamiane były w **Python3.8.0**, wersje wykorzystanych pakietów znajdują się w **requirements.txt**. Przykładowe dane znajdują się w folderze **data**. Po pobraniu pełnego repozytorium i zainstalowaniu odpowiednich bibliotek programy nie wymagają dodatkowej instalacji. Można wykorzystać programy na innych rekordach z odpowiednich baz danych, choć nie były one na nich testowane, wymaga to jednak indywidualnego pobrania ich i zapisania w csv z użyciem odpowiedniego oprogramownania z **WFDB** opisanego poniżej zgodnie z instrukcjami dostępnymi na załączonych stronach internetowych.
 
 ## Programy wykorzystane do odczytu danych
 
@@ -70,11 +74,7 @@ https://www.physionet.org/physiobank/database/ecgiddb/biometric.shtml
 
 Pliki pochodzące z bazy
 
-- ./data1/data.csv
-
-Wykorzystano w plikach
-
-- 0_1.py
+- `./data/sample1.csv`
 
 #### QT Database
 
@@ -90,11 +90,7 @@ https://physionet.org/physiobank/database/qtdb/doc/index.shtml
 
 Pliki pochodzące z bazy
 
-- ./data2/sel100_rdsamp_output_no_head.csv
-
-Wykorzystane w plikach
-
-- 0_2.py
+- `./data2/sample2.csv`
 
 #### Motion Artifact Contaminated ECG Database
 
@@ -106,19 +102,13 @@ http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=7299419&tag=1
 
 Pliki pochodzące z bazy
 
-- data3
+- **./data/**
   
-  - test01_00s_rdsamp_output_no_head.csv
+  - `sample3_1.csv`
   
-  - test10_00w_rdsamp_output_no_head.csv
+  - `sample3_2.csv`
   
-  - test20_45j_rdsamp_output_no_head.csv
-  
-  - test21_90j_rdsamp_output_no_head.csv
-
-Wykorzystane  w pliku
-
-- 0_3.py
+  - `sample3_3.csv`
 
 ## Pliki i Foldery
 
