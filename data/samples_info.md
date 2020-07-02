@@ -1,6 +1,10 @@
-sample1 - ECG-ID 10s fragment
+## Records used
 
-sample2 - QT DB sel100 record
+#### QT Database
+
+sample2 - sel100 record
+
+#### Motion Artifact Contaminated ECG Database
 
 sample3_1 - 01_00s record
 
@@ -10,4 +14,6 @@ sample3_3 - 20_45j record
 
 sample3_4 - 21_90j record
 
+## Licence
 
+Info on licence is provided in README.md in main directory

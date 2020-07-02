@@ -9,7 +9,7 @@
 
 ********************************************************************************
 '''
-#reading command line args
+#reading command line args, handling errors
 import sys
 
 #importing file
@@ -46,8 +46,7 @@ p_hist_vals, p_hist_edges = np.histogram(p_prominence, density=True)
 # our goal is to find threshold prominence value, so that all R peaks are above it and none of the noise is
 zerobars = np.where(p_hist_vals == 0)[0]
 if zerobars.size == 0:
-    print('ERROR: Zerobars empty')
-    input()
+    sys.exit('ERROR: Zerobars empty')
 # medium of the zerobar range is the right prominence threshold value
 prominence_threshold = (p_hist_edges[zerobars[-1] + 1] + p_hist_edges[zerobars[0]]) / 2
 prominent_peaks_idx, _ = find_peaks(data[:,1], prominence = prominence_threshold)

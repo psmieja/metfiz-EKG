@@ -61,21 +61,6 @@ i udostępnione są na licencji Open Data Commons Attribution Licence v1.0
 
 https://opendatacommons.org/licenses/by/index.html
 
-#### ECG-ID
-
-https://physionet.org/content/ecgiddb/1.0.0/#files-panel
-
-Lugovaya T.S. Biometric human identification based on electrocardiogram. 
-[Master's thesis] Faculty of Computing Technologies and Informatics, 
-Electrotechnical University "LETI", Saint-Petersburg, Russian 
-Federation; June 2005.
-
-https://www.physionet.org/physiobank/database/ecgiddb/biometric.shtml
-
-Pliki pochodzące z bazy
-
-- `./data/sample1.csv`
-
 #### QT Database
 
 https://physionet.org/content/qtdb/1.0.0/
